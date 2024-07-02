@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Star Battle</title>
+
+    <style>
+        #canvas {
+            border: 4px solid white;
+            margin: 20px;
+        }
+        #outputArea {
+            margin: 20px;
+            height: 80px;
+            width: 360px;
+            overflow: scroll;
+            padding: 5px;
+            white-space: pre-wrap;
+        }
+        
+    </style>
+</head>
+
+<body style="min-height:100vh;">
+    <html style="background-image: url('./lib/space_image.jpeg');
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <div style="display:flex; flex-direction:column; justify-content: center; min-height:100vh;">
+            <h1 style="text-align: center; color:white; font-family: 'Press Start 2P';">
+                Welcome to Star Battle!
+            </h1>
+            <div style="display:flex; justify-content: center;">
+                <canvas id="canvas" width="420" height="420" style="background-color: white;"></canvas>
+            </div>
+            <div style="display:flex; justify-content: center;">
+                <div id="outputArea" style="text-align:center; font-family: 'Press Start 2P'; color:white;"></div>
+            </div>
+    
+        </div>
+    </html>
+    <script src="dist/client-bundle.js"></script>
+</body>
+</html>
